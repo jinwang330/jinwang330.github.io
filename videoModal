@@ -1,0 +1,54 @@
+/** videoModal **/
+#videoModal {
+  border-radius: 0;
+  width: 870px;
+  margin:auto;}
+  #videoModal .modal-header {
+    background: #000;
+    border: 0;
+    color: #fff;
+    position: relative;
+		  height:35px; }
+    #videoModal .modal-header h3 {
+      font-size: 18px;
+      line-height: 22px;
+	  font-family:Arial, Helvetica, sans-serif;
+	  padding:5px;}
+  #videoModal .modal-body {
+    height: 489px;
+    padding: 0;
+    max-height: none;
+    overflow: hidden; }
+  #videoModal .modal-footer:empty {
+    display: none !important; }
+  #videoModal .close {
+    background: black;
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    text-shadow: none;
+    top: 0;
+    width: 38px; }
+
+h1
+{
+  margin-bottom: 50px !important;
+}
+
+.play-btn
+{
+width:50px;
+position: relative;
+top: -50%;
+cursor: pointer;
+transition: 0.5s;
+opacity: 0;
+}
+
+.col-md-4:hover .play-btn
+{
+  opacity:1;
+}
