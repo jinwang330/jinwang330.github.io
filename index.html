@@ -203,7 +203,20 @@ body, html {
                 </div>
               </div>
             </div>
-         
+
+  <script>$(document).ready(function(){
+    $('.modal').each(function(){
+            var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function(){
+
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
+});
+</script>         
          
      <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-large" id="portfolio">
