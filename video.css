@@ -49,3 +49,9 @@ opacity: 0;
 {
   opacity:1;
 }
+
+.modal-content
+{
+  background: transparent !important;
+  border: none !important;
+}
