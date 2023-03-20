@@ -1,8 +1,7 @@
 /* Basic styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #FFFFFF;
-  color: #333;		
+  background: linear-gradient(to bottom right, black, red);  color: #333;		
 }
 
 .container {
