@@ -2,7 +2,7 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: #FFFFFF;
-  color: #333;
+  color: #333;  
 }
 
 /* Set a max-width to keep content centered */
@@ -69,4 +69,12 @@ nav a:hover {
 
 a:hover {
   color: #0084ff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
