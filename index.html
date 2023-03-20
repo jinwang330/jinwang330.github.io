@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Business Card</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>My Business Card</title>
+	<style>
+		body {
+			background-color: #fff;
+			color: #000;
+			font-family: "Courier New", Courier, monospace;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 50px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.subtitle {
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.contact {
+			font-size: 1.2em;
+			margin-bottom: 20px;
+		}
+
+		.get-in-touch {
+			background-color: #000;
+			color: #fff;
+			font-size: 1.2em;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h1>Welcome to my profile</h1>
-        <button class="flip-button">Flip</button>
-      </div>
-      <div class="flip-card-back">
-        <h2>Contact Info</h2>
-        <ul>
-          <li>Email: myemail@example.com</li>
-          <li>Phone: 123-456-7890</li>
-        </ul>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-        <button class="flip-button">Flip back</button>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+	<div class="container">
+		<div class="title">John Doe</div>
+		<div class="subtitle">Web Developer</div>
+		<div class="contact">Email: john.doe@example.com</div>
+		<div class="contact">Phone: 123-456-7890</div>
+	</div>
+
+	<div class="get-in-touch">Get in touch</div>
 </body>
 </html>
