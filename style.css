@@ -73,7 +73,7 @@ a:hover {
 
 body {
   display: flex;
-  justify-content: center;
+  justify-content: column;
   align-items: center;
   height: 100vh;
   text-align: center;
@@ -92,4 +92,9 @@ body {
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
 }
