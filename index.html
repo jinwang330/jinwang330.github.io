@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to My Profile</title>
+	<title>Welcome to Jin's Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body {
-			background-color: #fff;
-			color: #000;
-			font-family: "Courier New", Courier, monospace;
+			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
-
 		.container {
-			max-width: 600px;
+			max-width: 800px;
 			margin: 0 auto;
-			padding: 50px;
+			padding: 30px;
 			box-sizing: border-box;
 			text-align: center;
 		}
-
-		.title {
-			font-size: 2em;
-			font-weight: bold;
+		h1 {
+			font-size: 3em;
 			margin-bottom: 20px;
 		}
-
-		.subtitle {
-			font-size: 1.5em;
-			font-weight: bold;
+		h2 {
+			font-size: 2em;
 			margin-bottom: 10px;
 		}
-
-		.contact {
-			font-size: 1.2em;
-			margin-bottom: 20px;
+		.linkedin-profile {
+			margin-bottom: 30px;
 		}
-
-		.get-in-touch {
-			background-color: #000;
+		.linkedin-profile a {
+			display: block;
+			background-color: #0077B5;
 			color: #fff;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out;
+		}
+		.linkedin-profile a:hover {
+			background-color: #005F8C;
+		}
+		.contact-form {
+			margin-bottom: 30px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		label {
 			font-size: 1.2em;
-			padding: 20px;
-			box-sizing: border-box;
-			text-align: center;
-			position: fixed;
-			bottom: 0;
+			margin-bottom: 10px;
+		}
+		input[type=text], input[type=email], textarea {
 			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		textarea {
+			height: 150px;
+		}
+		button {
+			background-color: #0077B5;
+			color: #fff;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+		}
+		button:hover {
+			background-color: #005F8C;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="title">Jin Wang</div>
-		<div class="subtitle">pharmacist/data geek</div>
-		<div class="contact">Email: jinwang330@gmail.com</div>
-		
+		<h1>My Professional Profile</h1>
+		<div class="linkedin-profile">
+			<a href="https://www.linkedin.com/in/jin-wang-a6023326b/" target="_blank">View my LinkedIn Profile</a>
+		</div>
+		<div class="contact-form">
+			<h2>Contact Me</h2>
+			<form method="post" action="contact-form.php">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
 	</div>
-
-	<div class="get-in-touch">Get in touch</div>
 </body>
 </html>
