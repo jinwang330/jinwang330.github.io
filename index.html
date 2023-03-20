@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Jin's Profile</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="flip-container">
-		<div class="flipper">
-			<div class="front">
-				<h1>Welcome to My Profile</h1>
-				<div class="linkedin-profile">
-					<a href="https://www.linkedin.com/in/jin-wang-a6023326b/" target="_blank">View my LinkedIn Profile</a>
-				</div>
-				<a href="#" class="flip-link">Contact Me</a>
-			</div>
-			<div class="back">
-				<h1>Contact Me</h1>
-				<form method="post" action="contact-form.php">
-					<label for="name">Name</label>
-					<input type="text" id="name" name="name" required>
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" required>
-					<label for="message">Message</label>
-					<textarea id="message" name="message" required></textarea>
-					<button type="submit">Send Message</button>
-				</form>
-				<a href="#" class="flip-link">Back to LinkedIn Profile</a>
-			</div>
-		</div>
-	</div>
-	<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Professional Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="flip-container">
+      <div class="flipper">
+        <div class="front">
+          <h1>Welcome to my Professional Page</h1>
+          <p>Here, you'll find information about my skills and experience.</p>
+          <button onclick="flip()">View my LinkedIn profile</button>
+        </div>
+        <div class="back">
+          <iframe src="https://www.linkedin.com/in/your-linkedin-profile/" width="100%" height="100%" frameborder="0"></iframe>
+          <button onclick="flip()">Back to my Professional Page</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
