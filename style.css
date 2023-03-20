@@ -1,1 +1,72 @@
+/* Set global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
 
+/* Set a max-width to keep content centered */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Create a header with logo and navigation */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: #0084ff;
+}
+
+/* Create a three-column layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.col {
+  width: 30%;
+}
+
+/* Add subtle hover effects */
+.btn {
+  background-color: #0084ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0071d1;
+}
+
+a:hover {
+  color: #0084ff;
+}
