@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jin's Profile</title>
+	<title>My Personal Webpage</title>
 	<style type="text/css">
 		body {
 			font-family: "Courier New", Courier, monospace;
 			background-color: white;
 			text-align: center;
+			scroll-behavior: smooth; /* add smooth scrolling transition */
 		}
 
 		.container {
@@ -14,12 +15,52 @@
 			max-width: 600px;
 			padding: 20px;
 		}
+
+		section {
+			height: 100vh; /* set height to full viewport height */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		/* add style for links in the navbar */
+		.navbar a {
+			display: inline-block;
+			padding: 10px;
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			transition: all 0.3s ease; /* add transition effect */
+		}
+
+		.navbar a:hover {
+			background-color: #ccc; /* add hover effect */
+		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h1>Welcome to My Profile</h1>
-		<p></p>
-	</div>
+	<nav class="navbar">
+		<a href="#section1">Section 1</a>
+		<a href="#section2">Section 2</a>
+		<a href="#section3">Section 3</a>
+	</nav>
+	<section id="section1">
+		<div class="container">
+			<h1>Section 1</h1>
+			<p>This is some sample text. Replace it with your own content.</p>
+		</div>
+	</section>
+	<section id="section2">
+		<div class="container">
+			<h1>Section 2</h1>
+			<p>This is some sample text. Replace it with your own content.</p>
+		</div>
+	</section>
+	<section id="section3">
+		<div class="container">
+			<h1>Section 3</h1>
+			<p>This is some sample text. Replace it with your own content.</p>
+		</div>
+	</section>
 </body>
 </html>
