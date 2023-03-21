@@ -38,7 +38,7 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="initChatbot()">
 	<nav class="navbar">
 		<a href="#section1">About Me</a>
 		<a href="#section2">My Projects</a>
@@ -75,5 +75,13 @@
 	</div>
 </section>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger
+  chat-title="Your Chatbot Title"
+  agent-id="YOUR AGENT ID"
+  language-code="en"
+  webhook-src="YOUR_WEBHOOK_URL"
+></df-messenger>
+
+}
 </body>
 </html>
