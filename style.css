@@ -1,1 +1,11 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: white;
+    text-align: center;
+}
 
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
