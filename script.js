@@ -13,3 +13,12 @@ messageForm.addEventListener('submit', (event) => {
     chatBox.scrollTop = chatBox.scrollHeight;
   }
 });
+
+
+function initChatbot() {
+    const chatbot = document.querySelector('df-messenger');
+    chatbot.addEventListener('df-response-received', (event) => {
+        const message = event.detail.response.queryResult.fulfillmentText;
+        // Do something with the response message
+    });
+}
