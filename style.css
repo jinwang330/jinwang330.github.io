@@ -2,10 +2,31 @@ body {
     font-family: "Courier New", Courier, monospace;
     background-color: white;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .container {
     margin: 0 auto;
     max-width: 600px;
     padding: 20px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
 }
