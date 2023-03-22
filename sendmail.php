@@ -21,7 +21,7 @@ if($_POST) {
     $subject = 'New message from your website';
     $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Message: ' . $message;
  
-    $send_email_to = 'jinwang330@gmail.com';
+    $send_email_to = 'talktome@jinwang330.github.io';
  
     if(mail($send_email_to, $subject, $body, $headers)) {
         $result = array('message' => 'Thank you for contacting me. I will get back to you shortly.', 'status' => 'success');
