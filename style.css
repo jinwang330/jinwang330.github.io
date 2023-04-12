@@ -92,3 +92,13 @@ iframe {
   border: none;
   margin-top: 20px;
 }
+
+/* Hide the header of the embedded Google form */
+iframe[src^="https://docs.google.com/forms/d/e/"] {
+  height: calc(100% - 60px);
+}
+
+/* Hide the "Send me a message" and email address text */
+iframe[src^="https://docs.google.com/forms/d/e/"] .freebirdFormviewerViewHeaderHeader {
+  display: none;
+}
