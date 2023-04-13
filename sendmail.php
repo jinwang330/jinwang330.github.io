@@ -1,3 +1,4 @@
+//this is currently not in use because github does not host email using php so I've decided to use googleform//
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace
