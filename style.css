@@ -1,6 +1,15 @@
-body {
+body 
+root {
+    --main-color: #ffd700; /* Gold */
+    --secondary-color: #000000; /* Black */
+}
+
+
+
+{
   font-family: "Courier New", Courier, monospace;
-  background-color: white;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
   text-align: center;
   scroll-behavior: smooth;
   margin: 0;
@@ -25,7 +34,7 @@ section {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  color: var(--main-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -40,7 +49,8 @@ section {
 }
 
 .navbar a:hover {
-  background-color: #ccc;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 600px) {
